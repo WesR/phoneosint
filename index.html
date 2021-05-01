@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Phone OSINT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link href="http://wesring.com/assets/css/lit.css" rel="stylesheet">
+    <link href="http://wesring.com/assets/css/util.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/main.css" />
+    <script src="/assets/main.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="4 col">
+                SID
+                <input id="sid" class="card w-90" placeholder="AC2b...">
+            </div>
+            <div class="4 col">
+                Auth Token
+                <input id="token" class="card w-90" placeholder="j8d2...">
+            </div>
+        </div>
+        <!--
+        <div class="row">
+            <div class="2 col">
+                <button class="btn primary m2">Save</button>
+            </div>
+        </div>-->
+
+        <div class="row">
+            <div class="6 col">
+                Phone Number
+                <input id="phonenumber" class="card w-90" type="number" "1 5645 1212">
+            </div>
+            <div class="6 col">
+                <button class="btn primary" onclick="search(type = 'carrier');">Carrier 0.5¢</button>
+                <button class="btn primary" onclick="search(type = 'basic');">Search 1¢</button>
+                <button class="btn primary" onclick="search(type = 'deep');">Deep Search 7¢</button>
+            </div>
+        </div>
+        <hr>
+        <pre>
+            <code id="output">
+            </code>
+        </pre>
+    </div>
+</body>
+
+</html>
